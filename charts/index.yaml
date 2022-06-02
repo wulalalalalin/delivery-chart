@@ -1,0 +1,284 @@
+apiVersion: v1
+entries:
+  clickhouse-cluster:
+  - apiVersion: v2
+    appVersion: "21.1"
+    created: "2022-06-02T14:03:09.053136+08:00"
+    description: Helm Chart for deploying a sharded and replicated ClickHouse cluster
+      on Kubernetes with Zookeeper
+    digest: c1d77f7f9f7edc55092393dbd007ee560412a5848488316fbd5d2086e4b12749
+    home: https://github.com/radondb/radondb-clickhouse-kubernetes
+    icon: https://xenondb.pek3b.qingstor.com/icons/radondb.svg
+    keywords:
+    - clickhouse
+    maintainers:
+    - email: tai_chong@foxmail.com
+      name: TCeason
+      url: https://tceason.github.io/
+    - email: suhouzhen2020@gmail.com
+      name: su-houzhen
+      url: https://su-houzhen.github.io/
+    name: clickhouse-cluster
+    sources:
+    - https://github.com/radondb/radondb-clickhouse-kubernetes
+    type: application
+    urls:
+    - clickhouse-cluster-v1.0.tgz
+    version: v1.0
+  dubbo-gui:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-06-02T14:03:09.053637+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 664a0bde8600a5a6e7d2e703e4ed2750f48e8fc2a5270696c7b886dab225dcab
+    name: dubbo-gui
+    type: application
+    urls:
+    - dubbo-gui-0.1.0.tgz
+    version: 0.1.0
+  elasticsearch:
+  - annotations:
+      category: Analytics
+    apiVersion: v2
+    appVersion: 7.17.3
+    created: "2022-06-02T14:03:09.061934+08:00"
+    dependencies:
+    - condition: global.kibanaEnabled
+      name: kibana
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Elasticsearch is a distributed search and analytics engine. It is
+      used for web search, log monitoring, and real-time analytics. Ideal for Big
+      Data applications.
+    digest: 274000bbeb5c7a0996a6b4d7f03be0442474a14d5b022774b2af55ce318d2dd1
+    home: https://github.com/bitnami/charts/tree/master/bitnami/elasticsearch
+    icon: https://bitnami.com/assets/stacks/elasticsearch/img/elasticsearch-stack-220x234.png
+    keywords:
+    - elasticsearch
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: elasticsearch
+    sources:
+    - https://github.com/bitnami/bitnami-docker-elasticsearch
+    - https://www.elastic.co/products/elasticsearch
+    urls:
+    - elasticsearch-17.9.29.tgz
+    version: 17.9.29
+  kibana:
+  - annotations:
+      category: Analytics
+    apiVersion: v2
+    appVersion: 8.1.3
+    created: "2022-06-02T14:03:09.065112+08:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Kibana is an open source, browser based analytics and search dashboard
+      for Elasticsearch. Kibana strives to be easy to get started with, while also
+      being flexible and powerful.
+    digest: eda8b9851b292885e53fe9cb33e55b2cf9330bb2fba839efe33e2d6f4c297369
+    home: https://github.com/bitnami/charts/tree/master/bitnami/kibana
+    icon: https://bitnami.com/assets/stacks/kibana/img/kibana-stack-220x234.png
+    keywords:
+    - kibana
+    - analytics
+    - monitoring
+    - metrics
+    - logs
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: kibana
+    sources:
+    - https://github.com/bitnami/bitnami-docker-kibana
+    - https://www.elastic.co/products/kibana
+    urls:
+    - kibana-10.0.3.tgz
+    version: 10.0.3
+  logstash:
+  - annotations:
+      category: LogManagement
+    apiVersion: v2
+    appVersion: 8.1.3
+    created: "2022-06-02T14:03:09.06867+08:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Logstash is an open source data processing engine. It ingests data
+      from multiple sources, processes it, and sends the output to final destination
+      in real-time. It is a core component of the ELK stack.
+    digest: 01dd55aac4a3fa669d05cbf4cfbe8a539e6014a430b40ac008c191c89e87633a
+    home: https://github.com/bitnami/charts/tree/master/bitnami/logstash
+    icon: https://bitnami.com/assets/stacks/logstash/img/logstash-stack-220x234.png
+    keywords:
+    - logstash
+    - logging
+    - elk
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: logstash
+    sources:
+    - https://github.com/bitnami/bitnami-docker-logstash
+    - https://www.elastic.co/products/logstash
+    urls:
+    - logstash-4.0.4.tgz
+    version: 4.0.4
+  mysql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 8.0.28
+    created: "2022-06-02T14:03:09.071885+08:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: MySQL is a fast, reliable, scalable, and easy to use open source
+      relational database system. Designed to handle mission-critical, heavy-load
+      production applications.
+    digest: 195692c3aa610296f457349329d08b044c1cbd4e4208f9da4bc7b9db3a21c962
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mysql
+    icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mysql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mysql
+    - https://mysql.com
+    urls:
+    - mysql-8.9.2.tgz
+    version: 8.9.2
+  nacos:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-06-02T14:03:09.072753+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 6459900cb5546855fc633919420ebdbbe3174a0f7070a34aed14e5e38862de42
+    maintainers:
+    - name: arrowfeng
+    - name: paderlol
+    name: nacos
+    urls:
+    - nacos-0.1.5.tgz
+    version: 0.1.5
+  operator:
+  - apiVersion: v2
+    appVersion: v4.4.22
+    created: "2022-06-02T14:03:09.075359+08:00"
+    description: A Helm chart for MinIO Operator
+    digest: 5a36a42fe517c47a979833478348430b58f47ac2b8a883141a5ad9a4e5976434
+    home: https://min.io
+    icon: https://min.io/resources/img/logo/MINIO_wordmark.png
+    keywords:
+    - storage
+    - object-storage
+    - S3
+    maintainers:
+    - email: dev@minio.io
+      name: MinIO, Inc
+    name: operator
+    sources:
+    - https://github.com/minio/operator
+    type: application
+    urls:
+    - operator-4.4.22.tgz
+    version: 4.4.22
+  redis:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 6.2.6
+    created: "2022-06-02T14:03:09.08046+08:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Redis(TM) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: e5532486242a5d4f8fd36452e40f1eb2e0f2095614118fae38530ae062828a9e
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    urls:
+    - redis-16.8.7.tgz
+    version: 16.8.7
+  redis-gui:
+  - apiVersion: v2
+    created: "2022-06-02T14:03:09.080973+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 170f549d287442dfb5f5e295e8e2e2aea02011dcac5b68ccd18bbdc3517c2b95
+    name: redis-gui
+    type: application
+    urls:
+    - redis-gui-0.1.0.tgz
+    version: 0.1.0
+  tenant:
+  - apiVersion: v2
+    appVersion: v4.4.22
+    created: "2022-06-02T14:03:09.081914+08:00"
+    description: A Helm chart for MinIO Operator
+    digest: ed16c0bf15ed9f19fee97ad95e429949ed16746c8edb7747caa9b86d33b031d1
+    home: https://min.io
+    icon: https://min.io/resources/img/logo/MINIO_wordmark.png
+    keywords:
+    - storage
+    - object-storage
+    - S3
+    maintainers:
+    - email: dev@minio.io
+      name: MinIO, Inc
+    name: tenant
+    sources:
+    - https://github.com/minio/operator
+    type: application
+    urls:
+    - tenant-4.4.22.tgz
+    version: 4.4.22
+  xxl-job:
+  - apiVersion: v2
+    appVersion: 2.3.1
+    created: "2022-06-02T14:03:09.082403+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 04e88771f14b712f122f58c5edb22a1e35758b28ceed4982c02816730391abaf
+    name: xxl-job
+    type: application
+    urls:
+    - xxl-job-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-06-02T14:03:09.052197+08:00"
