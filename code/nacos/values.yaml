@@ -17,7 +17,7 @@ nacos:
     image:
       repository: nacos/nacos-peer-finder-plugin
       tag: 1.1
-  replicaCount: 3
+  replicaCount: 1
   domainName: cluster.local
   preferhostmode: hostname
   serverPort: 8848
@@ -44,16 +44,12 @@ persistence:
       requests:
         storage: 5Gi
 
-# 控制台的暴露方式
 service:
-  type: ClusterIP
-  port: 8848
-
-consoleService:
   type: NodePort
+  # type: ClusterIP
   port: 8848
-  nodePort: 30806
-
+  nodePort: 30000
+  consoleNodePort: 30806
 
 ingress:
   enabled: false

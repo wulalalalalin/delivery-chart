@@ -3,10 +3,10 @@ entries:
   clickhouse-cluster:
   - apiVersion: v2
     appVersion: "21.1"
-    created: "2022-06-03T10:12:47.553556+08:00"
+    created: "2022-06-06T15:43:00.60623+08:00"
     description: Helm Chart for deploying a sharded and replicated ClickHouse cluster
       on Kubernetes with Zookeeper
-    digest: c1d77f7f9f7edc55092393dbd007ee560412a5848488316fbd5d2086e4b12749
+    digest: 0b8b3a33106bfdcd66fb576f01f9119d25e76848270f1dd80b93cc06849ee999
     home: https://github.com/radondb/radondb-clickhouse-kubernetes
     icon: https://xenondb.pek3b.qingstor.com/icons/radondb.svg
     keywords:
@@ -28,9 +28,9 @@ entries:
   dubbo-gui:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-03T10:12:47.554459+08:00"
+    created: "2022-06-06T15:43:00.606737+08:00"
     description: A Helm chart for Kubernetes
-    digest: 664a0bde8600a5a6e7d2e703e4ed2750f48e8fc2a5270696c7b886dab225dcab
+    digest: 6f4ba99f0d7d53bb6efa77a6456487aeac1015e8eca247926fcfac9e09d166c8
     name: dubbo-gui
     type: application
     urls:
@@ -41,7 +41,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 7.17.3
-    created: "2022-06-03T10:12:47.564714+08:00"
+    created: "2022-06-06T15:43:00.614936+08:00"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -55,7 +55,7 @@ entries:
     description: Elasticsearch is a distributed search and analytics engine. It is
       used for web search, log monitoring, and real-time analytics. Ideal for Big
       Data applications.
-    digest: 274000bbeb5c7a0996a6b4d7f03be0442474a14d5b022774b2af55ce318d2dd1
+    digest: 0c625af0b386c67ce7469dc6bd7b4a7a64a618d50dd7db1b950a2920bebba3ef
     home: https://github.com/bitnami/charts/tree/master/bitnami/elasticsearch
     icon: https://bitnami.com/assets/stacks/elasticsearch/img/elasticsearch-stack-220x234.png
     keywords:
@@ -75,7 +75,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 8.1.3
-    created: "2022-06-03T10:12:47.569371+08:00"
+    created: "2022-06-06T15:43:00.618109+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -85,7 +85,7 @@ entries:
     description: Kibana is an open source, browser based analytics and search dashboard
       for Elasticsearch. Kibana strives to be easy to get started with, while also
       being flexible and powerful.
-    digest: eda8b9851b292885e53fe9cb33e55b2cf9330bb2fba839efe33e2d6f4c297369
+    digest: 512d62b320105df3e5c668929e946bc95f4f23d9e61f56116bf901cf296139f0
     home: https://github.com/bitnami/charts/tree/master/bitnami/kibana
     icon: https://bitnami.com/assets/stacks/kibana/img/kibana-stack-220x234.png
     keywords:
@@ -109,7 +109,7 @@ entries:
       category: LogManagement
     apiVersion: v2
     appVersion: 8.1.3
-    created: "2022-06-03T10:12:47.574161+08:00"
+    created: "2022-06-06T15:43:00.621846+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -119,7 +119,7 @@ entries:
     description: Logstash is an open source data processing engine. It ingests data
       from multiple sources, processes it, and sends the output to final destination
       in real-time. It is a core component of the ELK stack.
-    digest: 01dd55aac4a3fa669d05cbf4cfbe8a539e6014a430b40ac008c191c89e87633a
+    digest: 87d3ae242a9afa3fb8d2eaaf5f59fb9d0459780faad8249504b6dfc23bd6d419
     home: https://github.com/bitnami/charts/tree/master/bitnami/logstash
     icon: https://bitnami.com/assets/stacks/logstash/img/logstash-stack-220x234.png
     keywords:
@@ -141,7 +141,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 8.0.28
-    created: "2022-06-03T10:12:47.577434+08:00"
+    created: "2022-06-06T15:43:00.625094+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -151,7 +151,7 @@ entries:
     description: MySQL is a fast, reliable, scalable, and easy to use open source
       relational database system. Designed to handle mission-critical, heavy-load
       production applications.
-    digest: 51757b34b2b9b581e5e73a0ecfe90998b68b995aad8932da131f458b22c4e074
+    digest: d1043e10fe27730684f5a54c7a58dbf41d3efe1d4f8c7cf9841232ce20277264
     home: https://github.com/bitnami/charts/tree/master/bitnami/mysql
     icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
     keywords:
@@ -173,9 +173,9 @@ entries:
   nacos:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2022-06-03T10:12:47.578814+08:00"
+    created: "2022-06-06T15:43:00.625689+08:00"
     description: A Helm chart for Kubernetes
-    digest: 6459900cb5546855fc633919420ebdbbe3174a0f7070a34aed14e5e38862de42
+    digest: d912601e60480a9ee83e2ebbebfda762c8054f7e72f8a7d32d270f8f6bf3bfc9
     maintainers:
     - name: arrowfeng
     - name: paderlol
@@ -186,9 +186,9 @@ entries:
   operator:
   - apiVersion: v2
     appVersion: v4.4.22
-    created: "2022-06-03T10:12:47.580632+08:00"
+    created: "2022-06-06T15:43:00.627039+08:00"
     description: A Helm chart for MinIO Operator
-    digest: 5a36a42fe517c47a979833478348430b58f47ac2b8a883141a5ad9a4e5976434
+    digest: de4bf3143512a6e05b6812742ad3f33b4726d684de381858bcbaf6bc3af96ce8
     home: https://min.io
     icon: https://min.io/resources/img/logo/MINIO_wordmark.png
     keywords:
@@ -210,7 +210,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.2.6
-    created: "2022-06-03T10:12:47.587001+08:00"
+    created: "2022-06-06T15:43:00.633152+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -220,7 +220,7 @@ entries:
     description: Redis(TM) is an open source, advanced key-value store. It is often
       referred to as a data structure server since keys can contain strings, hashes,
       lists, sets and sorted sets.
-    digest: e5532486242a5d4f8fd36452e40f1eb2e0f2095614118fae38530ae062828a9e
+    digest: 7884d71b540b100b57c80fce99f20ad71e009a5699e1a055adde4a0c171b54cf
     home: https://github.com/bitnami/charts/tree/master/bitnami/redis
     icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -240,20 +240,31 @@ entries:
     version: 16.8.7
   redis-gui:
   - apiVersion: v2
-    created: "2022-06-03T10:12:47.588615+08:00"
+    created: "2022-06-06T15:43:00.633679+08:00"
     description: A Helm chart for Kubernetes
-    digest: 170f549d287442dfb5f5e295e8e2e2aea02011dcac5b68ccd18bbdc3517c2b95
+    digest: e93207383480986d7965897e78359cb1210a16a263d2303cd8d01a070d50e24d
     name: redis-gui
     type: application
     urls:
     - redis-gui-0.1.0.tgz
     version: 0.1.0
+  rocketmq:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-06-06T15:43:00.634137+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 3e333890875b05542ff4c372adb80f90cc7c888a29ac45d19d2fb628af56b9b4
+    name: rocketmq
+    type: application
+    urls:
+    - rocketmq-0.1.0.tgz
+    version: 0.1.0
   tenant:
   - apiVersion: v2
     appVersion: v4.4.22
-    created: "2022-06-03T10:12:47.590145+08:00"
+    created: "2022-06-06T15:43:00.63508+08:00"
     description: A Helm chart for MinIO Operator
-    digest: ed16c0bf15ed9f19fee97ad95e429949ed16746c8edb7747caa9b86d33b031d1
+    digest: 43a336662999fedb54d94dcfa2c179a8f341163333e9ef7ab16a133f4e7f5463
     home: https://min.io
     icon: https://min.io/resources/img/logo/MINIO_wordmark.png
     keywords:
@@ -273,12 +284,12 @@ entries:
   xxl-job:
   - apiVersion: v2
     appVersion: 2.3.1
-    created: "2022-06-03T10:12:47.590964+08:00"
+    created: "2022-06-06T15:43:00.635576+08:00"
     description: A Helm chart for Kubernetes
-    digest: 04e88771f14b712f122f58c5edb22a1e35758b28ceed4982c02816730391abaf
+    digest: 021ec8e5a07709f9abde00c3b6c8702c0f895e19a356bb4d4c756d53692e1c9b
     name: xxl-job
     type: application
     urls:
     - xxl-job-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-03T10:12:47.551728+08:00"
+generated: "2022-06-06T15:43:00.605344+08:00"
