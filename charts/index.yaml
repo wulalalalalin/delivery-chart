@@ -3,7 +3,7 @@ entries:
   clickhouse-cluster:
   - apiVersion: v2
     appVersion: "21.1"
-    created: "2022-07-15T22:30:49.455241+08:00"
+    created: "2022-07-15T22:40:59.70081+08:00"
     description: Helm Chart for deploying a sharded and replicated ClickHouse cluster
       on Kubernetes with Zookeeper
     digest: 0b8b3a33106bfdcd66fb576f01f9119d25e76848270f1dd80b93cc06849ee999
@@ -28,7 +28,7 @@ entries:
   dubbo-gui:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-15T22:30:49.45587+08:00"
+    created: "2022-07-15T22:40:59.701252+08:00"
     description: A Helm chart for Kubernetes
     digest: 6f4ba99f0d7d53bb6efa77a6456487aeac1015e8eca247926fcfac9e09d166c8
     name: dubbo-gui
@@ -41,7 +41,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 7.17.3
-    created: "2022-07-15T22:30:49.464716+08:00"
+    created: "2022-07-15T22:40:59.708672+08:00"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -75,7 +75,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 8.1.3
-    created: "2022-07-15T22:30:49.468044+08:00"
+    created: "2022-07-15T22:40:59.711301+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -109,7 +109,7 @@ entries:
       category: LogManagement
     apiVersion: v2
     appVersion: 8.1.3
-    created: "2022-07-15T22:30:49.471365+08:00"
+    created: "2022-07-15T22:40:59.714625+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -141,7 +141,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 8.0.28
-    created: "2022-07-15T22:30:49.475689+08:00"
+    created: "2022-07-15T22:40:59.717823+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -173,7 +173,7 @@ entries:
   nacos:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2022-07-15T22:30:49.476603+08:00"
+    created: "2022-07-15T22:40:59.718372+08:00"
     description: A Helm chart for Kubernetes
     digest: d912601e60480a9ee83e2ebbebfda762c8054f7e72f8a7d32d270f8f6bf3bfc9
     maintainers:
@@ -186,7 +186,7 @@ entries:
   operator:
   - apiVersion: v2
     appVersion: v4.4.22
-    created: "2022-07-15T22:30:49.478323+08:00"
+    created: "2022-07-15T22:40:59.719577+08:00"
     description: A Helm chart for MinIO Operator
     digest: de4bf3143512a6e05b6812742ad3f33b4726d684de381858bcbaf6bc3af96ce8
     home: https://min.io
@@ -210,7 +210,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.2.6
-    created: "2022-07-15T22:30:49.484258+08:00"
+    created: "2022-07-15T22:40:59.724413+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -240,7 +240,7 @@ entries:
     version: 16.8.7
   redis-gui:
   - apiVersion: v2
-    created: "2022-07-15T22:30:49.48519+08:00"
+    created: "2022-07-15T22:40:59.724857+08:00"
     description: A Helm chart for Kubernetes
     digest: e93207383480986d7965897e78359cb1210a16a263d2303cd8d01a070d50e24d
     name: redis-gui
@@ -251,9 +251,9 @@ entries:
   rocketmq:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-15T22:30:49.486781+08:00"
+    created: "2022-07-15T22:40:59.72621+08:00"
     description: A Helm chart for Kubernetes
-    digest: 47c24719f2e32a3d137bf1e5735248d8895025093071e2679f4b0cf97de1c97e
+    digest: 8fce2e843197a48e776eae1e233ac090e8101d0ee70b664e32fc5212702ec2da
     name: rocketmq
     type: application
     urls:
@@ -262,7 +262,7 @@ entries:
   tenant:
   - apiVersion: v2
     appVersion: v4.4.22
-    created: "2022-07-15T22:30:49.48794+08:00"
+    created: "2022-07-15T22:40:59.727556+08:00"
     description: A Helm chart for MinIO Operator
     digest: 43a336662999fedb54d94dcfa2c179a8f341163333e9ef7ab16a133f4e7f5463
     home: https://min.io
@@ -284,7 +284,7 @@ entries:
   xxl-job:
   - apiVersion: v2
     appVersion: 2.3.1
-    created: "2022-07-15T22:30:49.488472+08:00"
+    created: "2022-07-15T22:40:59.727945+08:00"
     description: A Helm chart for Kubernetes
     digest: 021ec8e5a07709f9abde00c3b6c8702c0f895e19a356bb4d4c756d53692e1c9b
     name: xxl-job
@@ -292,4 +292,4 @@ entries:
     urls:
     - xxl-job-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-15T22:30:49.453327+08:00"
+generated: "2022-07-15T22:40:59.700005+08:00"

@@ -11,6 +11,8 @@ kind: ServiceAccount
 metadata:
   namespace: rocketmq-system
   name: rocketmq-operator
+  annotations:
+    helm.sh/hook-weight: "2"
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
@@ -18,6 +20,8 @@ metadata:
   creationTimestamp: null
   name: rocketmq-operator
   namespace: rocketmq-system
+  annotations:
+    helm.sh/hook-weight: "2"
 rules:
   - apiGroups:
       - ""
@@ -78,6 +82,8 @@ apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   namespace: rocketmq-system
   name: rocketmq-operator
+  annotations:
+    helm.sh/hook-weight: "2"
 subjects:
   - kind: ServiceAccount
     name: rocketmq-operator
@@ -92,6 +98,8 @@ kind: Deployment
 metadata:
   name: rocketmq-operator
   namespace: rocketmq-system
+  annotations:
+    helm.sh/hook-weight: "2"
 spec:
   replicas: 1
   selector:

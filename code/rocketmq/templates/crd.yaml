@@ -3,6 +3,8 @@ apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
   name: nameservices.rocketmq.apache.org
+  annotations:
+    helm.sh/hook-weight: "-1"
 spec:
   group: rocketmq.apache.org
   names:
@@ -99,6 +101,8 @@ apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
   name: topictransfers.rocketmq.apache.org
+  annotations:
+    helm.sh/hook-weight: "-1"
 spec:
   group: rocketmq.apache.org
   names:
@@ -149,6 +153,8 @@ apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
   name: consoles.rocketmq.apache.org
+  annotations:
+    helm.sh/hook-weight: "-1"
 spec:
   group: rocketmq.apache.org
   names:
@@ -4846,6 +4852,8 @@ apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
   name: brokers.rocketmq.apache.org
+  annotations:
+    helm.sh/hook-weight: "-1"
 spec:
   group: rocketmq.apache.org
   names:
