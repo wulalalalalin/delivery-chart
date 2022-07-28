@@ -6,8 +6,6 @@ metadata:
   namespace: rocketmq-system
   labels:
     app: rocketmq-console
-  annotations:
-    helm.sh/hook-weight: "1"
 spec:
   type: NodePort
   selector:
@@ -57,8 +55,6 @@ metadata:
   # name of broker cluster
   name: broker
   namespace: rocketmq-system
-  annotations:
-    helm.sh/hook-weight: "1"
 spec:
   # size is the number of the broker cluster, each broker cluster contains a master broker and [replicaPerGroup] replica brokers.
   size: 1
@@ -117,8 +113,6 @@ kind: NameService
 metadata:
   name: name-service
   namespace: rocketmq-system
-  annotations:
-    helm.sh/hook-weight: "1"
 spec:
   # size is the the name service instance number of the name service cluster
   size: 1
@@ -163,8 +157,6 @@ kind: Console
 metadata:
   name: console
   namespace: rocketmq-system
-  annotations:
-    helm.sh/hook-weight: "1"
 spec:
   # nameServers is the [ip:port] list of name service
   nameServers: ""
