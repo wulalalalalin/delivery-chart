@@ -3,7 +3,7 @@ entries:
   clickhouse-cluster:
   - apiVersion: v2
     appVersion: "21.1"
-    created: "2022-07-28T20:28:43.489111+08:00"
+    created: "2022-07-28T20:47:33.20336+08:00"
     description: Helm Chart for deploying a sharded and replicated ClickHouse cluster
       on Kubernetes with Zookeeper
     digest: 0b8b3a33106bfdcd66fb576f01f9119d25e76848270f1dd80b93cc06849ee999
@@ -28,7 +28,7 @@ entries:
   dubbo-gui:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-28T20:28:43.489822+08:00"
+    created: "2022-07-28T20:47:33.203992+08:00"
     description: A Helm chart for Kubernetes
     digest: 6f4ba99f0d7d53bb6efa77a6456487aeac1015e8eca247926fcfac9e09d166c8
     name: dubbo-gui
@@ -41,7 +41,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 7.17.3
-    created: "2022-07-28T20:28:43.499968+08:00"
+    created: "2022-07-28T20:47:33.21372+08:00"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -75,7 +75,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 8.1.3
-    created: "2022-07-28T20:28:43.505234+08:00"
+    created: "2022-07-28T20:47:33.217649+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -109,7 +109,7 @@ entries:
       category: LogManagement
     apiVersion: v2
     appVersion: 8.1.3
-    created: "2022-07-28T20:28:43.509997+08:00"
+    created: "2022-07-28T20:47:33.222461+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -141,7 +141,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 8.0.28
-    created: "2022-07-28T20:28:43.514083+08:00"
+    created: "2022-07-28T20:47:33.225631+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -173,7 +173,7 @@ entries:
   nacos:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2022-07-28T20:28:43.515158+08:00"
+    created: "2022-07-28T20:47:33.226911+08:00"
     description: A Helm chart for Kubernetes
     digest: d912601e60480a9ee83e2ebbebfda762c8054f7e72f8a7d32d270f8f6bf3bfc9
     maintainers:
@@ -186,7 +186,7 @@ entries:
   operator:
   - apiVersion: v2
     appVersion: v4.4.22
-    created: "2022-07-28T20:28:43.517201+08:00"
+    created: "2022-07-28T20:47:33.228957+08:00"
     description: A Helm chart for MinIO Operator
     digest: de4bf3143512a6e05b6812742ad3f33b4726d684de381858bcbaf6bc3af96ce8
     home: https://min.io
@@ -210,7 +210,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.2.6
-    created: "2022-07-28T20:28:43.524878+08:00"
+    created: "2022-07-28T20:47:33.234329+08:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -240,7 +240,7 @@ entries:
     version: 16.8.7
   redis-gui:
   - apiVersion: v2
-    created: "2022-07-28T20:28:43.525951+08:00"
+    created: "2022-07-28T20:47:33.235385+08:00"
     description: A Helm chart for Kubernetes
     digest: e93207383480986d7965897e78359cb1210a16a263d2303cd8d01a070d50e24d
     name: redis-gui
@@ -251,7 +251,7 @@ entries:
   rocketmq:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-28T20:28:43.528541+08:00"
+    created: "2022-07-28T20:47:33.237241+08:00"
     description: A Helm chart for Kubernetes
     digest: 8fce2e843197a48e776eae1e233ac090e8101d0ee70b664e32fc5212702ec2da
     name: rocketmq
@@ -262,7 +262,7 @@ entries:
   tenant:
   - apiVersion: v2
     appVersion: v4.4.22
-    created: "2022-07-28T20:28:43.532964+08:00"
+    created: "2022-07-28T20:47:33.240328+08:00"
     description: A Helm chart for MinIO Operator
     digest: 43a336662999fedb54d94dcfa2c179a8f341163333e9ef7ab16a133f4e7f5463
     home: https://min.io
@@ -284,12 +284,12 @@ entries:
   xxl-job:
   - apiVersion: v2
     appVersion: 2.3.1
-    created: "2022-07-28T20:28:43.533977+08:00"
+    created: "2022-07-28T20:47:33.24083+08:00"
     description: A Helm chart for Kubernetes
-    digest: 020324772080b9284fe19eb55fee698d4904e248555d860a96d5d59f130eabce
+    digest: 2a142a6e7e639459c9a4bdef0a1279ab469fc3076009b2114d4a822d747ed530
     name: xxl-job
     type: application
     urls:
     - xxl-job-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-28T20:28:43.48724+08:00"
+generated: "2022-07-28T20:47:33.201843+08:00"
