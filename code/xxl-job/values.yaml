@@ -86,3 +86,8 @@ tolerations: []
 affinity: {}
 
 appConfig: ""
+
+db:
+  url: ""
+  username: ""
+  password: ""

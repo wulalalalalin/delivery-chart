@@ -42,7 +42,10 @@ spec:
               protocol: TCP
           env:
             - name: PARAMS
-              value: {{ .Values.appConfig }}
+              value:
+                --spring.datasource.url={{ .Values.db.url }}
+                --spring.datasource.username={{ .Values.db.username }}
+                --spring.datasource.password={{ .Values.db.password }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
